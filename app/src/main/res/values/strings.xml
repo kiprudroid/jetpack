@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Class_Project</string>
+    <string name="title_activity_intent">IntentActivity</string>
+    <string name="title_activity_layout">LayoutActivity</string>
+</resources>
