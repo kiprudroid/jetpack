@@ -66,13 +66,27 @@ fun Demo() {
         Spacer(modifier = Modifier.height(10.dp))
 
         Button(
-            onClick = { /*TODO*/ },
+            onClick = {
+                mContext.startActivity(Intent(mContext,DestinationActivity::class.java))
+            },
             colors = ButtonDefaults.buttonColors(Color.Blue),
             modifier = Modifier.align(Alignment.CenterHorizontally)
         )
 
         {
             Text(text = "About")
+        }
+
+        Button(
+            onClick = {
+                mContext.startActivity(Intent(mContext,LottieActivity::class.java))
+            },
+            colors = ButtonDefaults.buttonColors(Color.Blue),
+            modifier = Modifier.align(Alignment.CenterHorizontally)
+        )
+
+        {
+            Text(text = "Animation")
         }
 
         Text(
@@ -143,7 +157,9 @@ fun Demo() {
         Spacer(modifier = Modifier.height(10.dp))
 
         Button(
-            onClick = {mContext.startActivity(Intent(mContext,IntentActivity::class.java))},
+            onClick = {
+                mContext.startActivity(Intent(mContext,IntentActivity::class.java))
+                      },
             shape = RoundedCornerShape(5.dp),
             colors = ButtonDefaults.buttonColors(Color.Red),
             modifier = Modifier

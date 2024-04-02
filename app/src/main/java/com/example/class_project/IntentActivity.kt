@@ -6,6 +6,7 @@ import android.provider.MediaStore
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.BorderStroke
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
@@ -36,8 +37,10 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.core.net.toUri
 import com.example.class_project.ui.theme.Class_ProjectTheme
 import com.example.class_project.LayoutActivity
@@ -149,9 +152,9 @@ IconButton(onClick = {
         OutlinedButton(onClick = {
             val shareIntent = Intent(Intent.ACTION_SEND)
             shareIntent.type = "text/plain"
-            shareIntent.putExtra(Intent.EXTRA_EMAIL, arrayOf("akinyiglory2@gmail.com"))
-            shareIntent.putExtra(Intent.EXTRA_SUBJECT, "subject")
-            shareIntent.putExtra(Intent.EXTRA_TEXT, "Hello, this is the email body")
+            shareIntent.putExtra(Intent.EXTRA_EMAIL, arrayOf("kiprutoshadrack06@gmail.com"))
+            shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Job Portal Application")
+            shareIntent.putExtra(Intent.EXTRA_TEXT, "Hello, this to apply for an Administrator position")
             mContext.startActivity(shareIntent)
         },
             modifier = Modifier
@@ -217,6 +220,19 @@ IconButton(onClick = {
             }
         Spacer(modifier = Modifier.height(15.dp))
         //End of outlined Button
+
+
+        Text(
+            text = "Do not have an account ? Register",
+            fontSize = 20.sp,
+            color = Color.Blue,
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(30.dp)
+                .clickable {
+                    mContext.startActivity(Intent(mContext, FormActivity:: class.java))
+                }
+        )
     }
 }
 
