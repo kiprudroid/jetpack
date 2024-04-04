@@ -69,7 +69,7 @@ fun Demo() {
             onClick = {
                 mContext.startActivity(Intent(mContext,DestinationActivity::class.java))
             },
-            colors = ButtonDefaults.buttonColors(Color.Blue),
+            colors = ButtonDefaults.buttonColors(Color.Black),
             modifier = Modifier.align(Alignment.CenterHorizontally)
         )
 
@@ -81,12 +81,23 @@ fun Demo() {
             onClick = {
                 mContext.startActivity(Intent(mContext,LottieActivity::class.java))
             },
-            colors = ButtonDefaults.buttonColors(Color.Blue),
+            colors = ButtonDefaults.buttonColors(Color.Red),
             modifier = Modifier.align(Alignment.CenterHorizontally)
         )
 
         {
             Text(text = "Animation")
+        }
+        Button(
+            onClick = {
+                mContext.startActivity(Intent(mContext,ListActivity::class.java))
+            },
+            colors = ButtonDefaults.buttonColors(Color.Green),
+            modifier = Modifier.align(Alignment.CenterHorizontally)
+        )
+
+        {
+            Text(text = "List")
         }
 
         Text(
@@ -146,7 +157,7 @@ fun Demo() {
         ) {
             Image(
                 painter = painterResource(id = R.drawable.sparrow),
-                contentDescription = "tiger",
+                contentDescription = "sparrow",
                 modifier = Modifier
                     .size(200.dp)
                     .clip(shape = CircleShape),
