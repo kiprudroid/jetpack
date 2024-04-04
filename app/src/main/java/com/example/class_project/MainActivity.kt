@@ -99,6 +99,17 @@ fun Demo() {
         {
             Text(text = "List")
         }
+        Button(
+            onClick = {
+                mContext.startActivity(Intent(mContext,SplashActivity::class.java))
+            },
+            colors = ButtonDefaults.buttonColors(Color.Green),
+            modifier = Modifier.align(Alignment.CenterHorizontally)
+        )
+
+        {
+            Text(text = "Splash")
+        }
 
         Text(
             text = "Types of Cars",

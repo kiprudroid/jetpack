@@ -7,4 +7,5 @@
     <string name="title_activity_explore">ExploreActivity</string>
     <string name="title_activity_lottie">LottieActivity</string>
     <string name="title_activity_list">ListActivity</string>
+    <string name="title_activity_splash">SplashActivity</string>
 </resources>
