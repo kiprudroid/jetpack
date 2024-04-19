@@ -101,14 +101,14 @@ fun Demo() {
         }
         Button(
             onClick = {
-                mContext.startActivity(Intent(mContext,SplashActivity::class.java))
+                mContext.startActivity(Intent(mContext,InsertActivity::class.java))
             },
-            colors = ButtonDefaults.buttonColors(Color.Green),
+            colors = ButtonDefaults.buttonColors(Color.Blue),
             modifier = Modifier.align(Alignment.CenterHorizontally)
         )
 
         {
-            Text(text = "Splash")
+            Text(text = "Employees")
         }
 
         Text(

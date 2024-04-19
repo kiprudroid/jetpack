@@ -13,10 +13,25 @@
         android:theme="@style/Theme.Class_Project"
         tools:targetApi="31">
         <activity
+            android:name=".RetrieveActivity"
+            android:exported="false"
+            android:label="@string/title_activity_retrieve"
+            android:theme="@style/Theme.Class_Project" />
+        <activity
+            android:name=".InsertActivity"
+            android:exported="false"
+            android:label="@string/title_activity_insert"
+            android:theme="@style/Theme.Class_Project" />
+        <activity
+            android:name=".IntroActivity"
+            android:exported="false"
+            android:label="@string/title_activity_intro"
+            android:theme="@style/Theme.Class_Project" />
+        <activity
             android:name=".MainActivity"
             android:exported="false"
-            android:theme="@style/Theme.Class_Project"
-            android:label="@string/title_activity_splash"/>
+            android:label="@string/title_activity_splash"
+            android:theme="@style/Theme.Class_Project" />
         <activity
             android:name=".ListActivity"
             android:exported="false"

@@ -8,4 +8,7 @@
     <string name="title_activity_lottie">LottieActivity</string>
     <string name="title_activity_list">ListActivity</string>
     <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_intro">IntroActivity</string>
+    <string name="title_activity_insert">InsertActivity</string>
+    <string name="title_activity_retrieve">RetrieveActivity</string>
 </resources>
